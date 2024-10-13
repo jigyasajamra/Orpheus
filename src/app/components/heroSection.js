@@ -3,19 +3,30 @@ import Image from 'next/image';
 
 export default function HeroSection() {
     return (
-        <div className="relative bg-black min-h-screen">
+        <div className="relative min-h-screen bg-black">
             <Head>
                 <title>TIDAL Music</title>
                 <meta name="description" content="Tidal - Listen to the best-in-class music experience." />
             </Head>
 
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/background-stars.avif" // Background image for the entire section
+                    alt="Background"
+                    layout="fill"
+                    objectFit="cover"
+                    className="opacity-30"
+                />
+            </div>
+
             {/* Header */}
-            <header className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+            <header className="relative z-10 flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
                 <div className="text-white text-3xl font-bold">TIDAL</div>
                 <nav className="space-x-8 text-white">
                     <a href="#" className="hover:underline">About</a>
                     <a href="#" className="hover:underline">Support</a>
-                    <a href="#" className="hover:underline">Log in</a>
+                    <a href="/login" className="hover:underline">Log in</a>
                     <a
                         href="#"
                         className="bg-white text-black px-4 py-2 rounded-full ml-4 hover:bg-gray-200 transition"
@@ -26,19 +37,9 @@ export default function HeroSection() {
             </header>
 
             {/* Hero Section */}
-            <section className="relative overflow-hidden text-white flex justify-center items-center h-screen bg-black px-8">
-                <div className="absolute inset-0">
-                    <Image
-                        src="/background-stars.avif" // Add your background image here
-                        alt="Background"
-                        layout="fill"
-                        objectFit="cover"
-                        className="opacity-30"
-                    />
-                </div>
-                
+            <section className="relative z-10 overflow-hidden text-white flex justify-center items-center h-screen px-8">
                 {/* Left Column - Text */}
-                <div className="z-10 max-w-lg mr-12"> {/* Adjusted margin-right to narrow the gap */}
+                <div className="max-w-lg mr-12"> {/* Adjusted margin-right to narrow the gap */}
                     <h1 className="text-6xl font-bold mb-4">Listen. Discover. Repeat.</h1>
                     <p className="text-xl mb-8">Hear your music in the best-in-class sound.</p>
                     <a
@@ -50,13 +51,13 @@ export default function HeroSection() {
                 </div>
 
                 {/* Right Column - Larger Album Cover */}
-                <div className="z-10 hidden md:block">
-                    <div className="bg-gray-900 p-4 rounded-lg shadow-lg" style={{ maxWidth: "900px" }}> {/* Increased size */}
+                <div className="hidden md:block">
+                    <div className="bg-gray-900 p-4 rounded-lg shadow-lg" style={{ maxWidth: "900px" }}>
                         <Image
                             src="/album-cover.jpg" // Add your album cover image here
                             alt="Album Cover"
-                            width={550} // Increased width
-                            height={550} // Increased height
+                            width={550}
+                            height={550}
                             className="rounded-lg"
                         />
                         <div className="mt-4">

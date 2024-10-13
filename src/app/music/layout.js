@@ -120,7 +120,7 @@ export default function Layout({ children }) {
 
 
             {/* Main Content */}
-            <aside className="max-h-screen sticky py-8 w-full">{children}</aside>
+            <aside className="max-h-screen sticky w-full">{children}</aside>
         </div>
     );
 }

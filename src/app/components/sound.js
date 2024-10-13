@@ -1,10 +1,20 @@
 // components/SoundQualityDisplay.js
 import React from "react";
+import Image from "next/image";
 
 const SoundQualityDisplay = () => {
     return (
         <div className="bg-black text-white p-12">
+
             <h2 className="text-4xl font-bold mb-6">Powerful sound for any purpose</h2>
+            {/* <div>
+                <Image
+                    src="/dj.jpg"
+                    alt="Sound Quality"
+                    width={1440}
+                    height={400}
+                    className="rounded-lg" />
+            </div> */}
             <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
                 {/* Max Quality */}
                 

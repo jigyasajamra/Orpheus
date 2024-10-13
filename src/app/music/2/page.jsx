@@ -91,7 +91,7 @@ export default function Home() {
         <div className="flex flex-col h-screen bg-black text-white z-20">
         <div className="absolute inset-0">
                     <Image
-                        src="/bg.jpg" // Add your background image here
+                        src="/tsbg.jpg" // Add your background image here
                         alt="Background"
                         layout="fill"
                         objectFit="cover"
@@ -102,7 +102,7 @@ export default function Home() {
                 
                 <div className="bg-red-500 h-60 w-60 rounded-full relative overflow-hidden">
                     <Image
-                        src="/ed.jpg"
+                        src="/ts.jpeg"
                         alt="Now Playing Cover"
                         layout="fill" // Fills the parent container
                         objectFit="cover" // Ensures the image covers the div
@@ -110,7 +110,7 @@ export default function Home() {
                     />
                 </div>
                 <div className=" p-8 ml-40 rounded-lg shadow-lg max-w-lg">
-                    <h1 className="text-5xl font-bold text-white tracking-wider mb-4">NeelKamal Singh</h1>
+                    <h1 className="text-5xl font-bold text-white tracking-wider mb-4">Taylor Swift</h1>
                     <p className="text-lg text-white opacity-80">
                         Bhojpuri-Music • Music Enthusiast • Dreamer
                     </p>
