@@ -13,16 +13,6 @@ const ArtistProfile = () => {
     genre: 'Pop',
   };
 
-  const similarArtists = [
-    { name: 'Maroon 5', image: '/maroon5.jpg' },
-    { name: 'Shawn Mendes', image: '/shawn.jpg' },
-    { name: 'Sam Smith', image: '/sam.jpg' },
-    { name: 'Charlie Puth', image: '/charlie.jpg' },
-    { name: 'Lewis Capaldi', image: '/lewis.jpg' },
-    { name: 'Adele', image: '/adele.jpg' },
-    { name: 'Bruno Mars', image: '/bruno.jpg' },
-    { name: 'Justin Bieber', image: '/justin.jpg' },
-  ];
 
   return (
     <div className="p-8 text-white">

@@ -4,7 +4,7 @@ import React from 'react';
 const PlansDisplay = () => {
     return (
         <div className="bg-gray-900 text-white p-10">
-            <h2 className="text-4xl font-bold text-center mb-12">Press play on the perfect TIDAL plan</h2>
+            <h2 className="text-4xl font-bold text-center mb-12">Press play on the perfect Orpheus plan</h2>
             <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
                 {/* Individual Plan */}
                 <div className="bg-gradient-to-br from-gray-800 to-gray-700 p-8 rounded-lg border border-yellow-500 text-center md:text-left shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">

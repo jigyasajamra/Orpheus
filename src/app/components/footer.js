@@ -10,7 +10,7 @@ export default function Footer() {
                     <div>
                         <h4 className="text-white font-extrabold text-lg tracking-wide mb-6">Get Started</h4>
                         <ul className="space-y-3 text-base">
-                            <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Download TIDAL</a></li>
+                            <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Download Orpheus</a></li>
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Pricing & Plans</a></li>
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Transfer Music</a></li>
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Supported Devices</a></li>
@@ -18,9 +18,9 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Discover TIDAL */}
+                    {/* Discover Orpheus */}
                     <div>
-                        <h4 className="text-white font-extrabold text-lg tracking-wide mb-6">Discover TIDAL</h4>
+                        <h4 className="text-white font-extrabold text-lg tracking-wide mb-6">Discover Orpheus</h4>
                         <ul className="space-y-3 text-base">
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">About</a></li>
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">For Music</a></li>
@@ -30,7 +30,7 @@ export default function Footer() {
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Originals</a></li>
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Rising</a></li>
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Sound Quality</a></li>
-                            <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">TIDAL Connect</a></li>
+                            <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Orpheus Connect</a></li>
                         </ul>
                     </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
                     <div>
                         <h4 className="text-white font-extrabold text-lg tracking-wide mb-6">Company</h4>
                         <ul className="space-y-3 text-base">
-                            <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">What is TIDAL?</a></li>
+                            <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">What is Orpheus?</a></li>
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Partners</a></li>
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Careers</a></li>
                             <li><a href="#" className="hover:text-white transition duration-200 ease-in-out">Press</a></li>
@@ -66,7 +66,7 @@ export default function Footer() {
 
                 {/* Lower Footer */}
                 <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-base">
-                    <p className="text-sm text-gray-500">&copy; 2024 TIDAL Music AS</p>
+                    <p className="text-sm text-gray-500">&copy; 2024 Orpheus Music AS</p>
                     <div className="space-x-6 mt-4 md:mt-0">
                         <a href="#" className="hover:text-white transition duration-200 ease-in-out">Privacy Notice</a>
                         <a href="#" className="hover:text-white transition duration-200 ease-in-out">Terms and Conditions</a>

@@ -5,8 +5,8 @@ export default function HeroSection() {
     return (
         <div className="relative min-h-screen bg-black">
             <Head>
-                <title>TIDAL Music</title>
-                <meta name="description" content="Tidal - Listen to the best-in-class music experience." />
+                <title>Orpheus Music</title>
+                <meta name="description" content="Orpheus - Listen to the best-in-class music experience." />
             </Head>
 
             {/* Background Image */}
@@ -22,7 +22,7 @@ export default function HeroSection() {
 
             {/* Header */}
             <header className="relative z-10 flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-                <div className="text-white text-3xl font-bold">TIDAL</div>
+                <div className="text-white text-3xl font-bold">Orpheus</div>
                 <nav className="space-x-8 text-white">
                     <a href="#" className="hover:underline">About</a>
                     <a href="#" className="hover:underline">Support</a>
