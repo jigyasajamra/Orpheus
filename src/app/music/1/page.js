@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect,useRef } from 'react';
 import useSound from 'use-sound';
 import { PlayIcon, PauseIcon } from '@heroicons/react/solid'; // For play and pause icons
 import Image from 'next/image';
@@ -13,19 +13,19 @@ const songs = [
     {
         title: 'Daily Mix 1',
         artist: 'Yo Yo Honey Singh, Mahalakshmi Iyer, Diljit',
-        cover: 'https://imgv3.fotor.com/images/blog-richtext-image/born-to-die-music-album-cover.png',
-        soundUrl: '/path-to-song1.mp3',
+        cover: '/idc.jpeg',
+        soundUrl: '/Parasyte - Next to You (Yousko Remix) (192  kbps).mp3',
     },
     {
         title: 'Daily Mix 2',
         artist: 'Harnoor, Guru Randhawa, Karan Aujla',
-        cover: 'https://imgv3.fotor.com/images/blog-richtext-image/born-to-die-music-album-cover.png',
+        cover: '/perfect.jpeg',
         soundUrl: '/path-to-song2.mp3',
     },
     {
         title: 'Daily Mix 3',
         artist: 'Mitraz, Anuv Jain, The Local Train',
-        cover: 'https://imgv3.fotor.com/images/blog-richtext-image/born-to-die-music-album-cover.png',
+        cover: '/beautiful.jpeg',
         soundUrl: '/path-to-song3.mp3',
     },
     {
@@ -47,6 +47,8 @@ const songs = [
         soundUrl: '/path-to-song6.mp3',
     },
 ];
+var audioSrc = "/Ed-Sheeran-Beautiful-People-ft-Khalid-(HipHopKit.com).mp3"
+
 
 export default function Home() {
     const [currentSong, setCurrentSong] = useState(null);
@@ -61,10 +63,11 @@ export default function Home() {
     const handlePlayPause = (song) => {
         if (currentSong?.title === song.title) {
             if (isPlaying) {
-                pause();
+                audioRef.current.pause();
                 setIsPlaying(false);
             } else {
-                play();
+                audioRef.current.play();
+                startTimer();
                 setIsPlaying(true);
             }
         } else {
@@ -86,6 +89,42 @@ export default function Home() {
             return () => clearInterval(interval);
         }
     }, [sound]);
+
+    const audioRef = useRef(new Audio(audioSrc));
+    const intervalRef = useRef();
+    const isReady = useRef(false);
+    const [trackProgress, setTrackProgress] = useState(0);
+
+
+    // Destructure for conciseness
+  const { duration2 } = audioRef.current;
+
+  const startTimer = () => {
+    clearInterval(intervalRef.current);
+
+    intervalRef.current = setInterval(() => {
+
+      setTrackProgress(audioRef.current.currentTime);
+
+    }, 1000);
+  };
+
+//   useEffect(() => {
+//     if (isPlaying) {
+//       audioRef.current.play();
+//       startTimer();
+//     } else {
+//       audioRef.current.pause();
+//     }
+//   }, [isPlaying]);
+
+  useEffect(() => {
+    // Pause and clean up on unmount
+    return () => {
+      audioRef.current.pause();
+      clearInterval(intervalRef.current);
+    };
+  }, []);
 
     return (
         <div className="flex flex-col h-screen bg-black text-white z-20">
@@ -126,7 +165,7 @@ export default function Home() {
                 <div className="grid grid-cols-4 gap-6 mb-12">
                     {songs.slice(0, 4).map((song, idx) => (
                         <div key={idx} className="relative bg-gray-800 rounded-lg p-4">
-                            <Image src={song.cover} width={200} height={200} alt={song.title} className="rounded-md mb-4" />
+                            <Image src={song.cover} width={300} height={300} alt={song.title} className="rounded-md mb-4" />
                             <p className="font-bold">{song.title}</p>
                             <p className="text-gray-400 text-sm">{song.artist}</p>
                             {/* Play Button */}
