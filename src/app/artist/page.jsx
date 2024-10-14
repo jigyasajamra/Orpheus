@@ -166,8 +166,8 @@ export default function Home() {
                     ))}
                 </div>
                 <div>
-                <h3 className="text-4xl font-bold text-blue-700 mb-6">Your Earnings</h3>
-
+                <h3 className="text-4xl font-bold text-blue-700 mb-6">Your Earnings : 1.6 APT</h3>
+                        
                 </div>
                 <ArtistProfile />
             </div>

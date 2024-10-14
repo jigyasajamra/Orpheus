@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AuthComponent() {
     const [isLogin, setIsLogin] = useState(true);
@@ -44,12 +45,15 @@ export default function AuthComponent() {
                                 className="w-full p-4 rounded-lg bg-gray-100 text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300"
                             />
                         </div>
+                        <Link href="/artist">
+                       
                         <button
                             type="submit"
                             className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-300"
                         >
                             {isLogin ? "Login" : "Sign Up"}
                         </button>
+                        </Link>
                     </form>
 
                     {/* Toggle Between Login/Signup */}

@@ -10,57 +10,57 @@ export const products = [
         title: "Moonbeam",
         link: "https://gomoonbeam.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+            "/bgas.jpg",
     },
     {
         title: "Cursor",
         link: "https://cursor.so",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+            "/bg.jpg",
     },
     {
         title: "Rogue",
         link: "https://userogue.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+            "/carbg.jpg",
     },
 
     {
         title: "Editorially",
         link: "https://editorially.org",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+            "/dd.jpg",
     },
     {
         title: "Editrix AI",
         link: "https://editrix.ai",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+            "/dj.jpg",
     },
     {
         title: "Pixel Perfect",
         link: "https://app.pixelperfect.quest",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+            "/bg.jpg",
     },
 
     {
         title: "Algochurn",
         link: "https://algochurn.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+            "/tsbg.jpg",
     },
     {
         title: "Aceternity UI",
         link: "https://ui.aceternity.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+           "/dd.jpg",
     },
     {
         title: "Tailwind Master Kit",
         link: "https://tailwindmasterkit.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+        "/bgas.jpg",
     },
     {
         title: "SmartBridge",
@@ -79,13 +79,13 @@ export const products = [
         title: "Creme Digital",
         link: "https://cremedigital.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+        "/bg.jpg",
     },
     {
         title: "Golden Bells Academy",
         link: "https://goldenbellsacademy.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+        "/bgas.jpg",
     },
     {
         title: "Invoker Labs",
